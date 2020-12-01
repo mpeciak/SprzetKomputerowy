@@ -1,0 +1,37 @@
+﻿<local:JedenViewBase x:Class="SprzetKomputerowy.Views.NowaOsobaView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SprzetKomputerowy.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="130"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="0" Foreground="White" Grid.Row="0" Margin="2" Content=" Imie" ></Label>
+        <Label Grid.Column="0" Foreground="White" Grid.Row="1" Margin="2" Content=" Nazwisko" ></Label>
+        <Label Grid.Column="0" Foreground="White" Grid.Row="2" Margin="2" Content=" Dzial" ></Label>
+        <Label Grid.Column="0" Foreground="White" Grid.Row="3" Margin="2" Content=" Lokalizacja" ></Label>
+        <Label Grid.Column="0" Foreground="White" Grid.Row="4" Margin="2" Content=" Zestaw" ></Label>
+        <TextBox Grid.Column="1" Grid.Row="0" Margin="2" Text="{Binding Imie,UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Grid.Column="1" Grid.Row="1" Margin="2" Text="{Binding Nazwisko, UpdateSourceTrigger=PropertyChanged}"/>
+        <ComboBox Grid.Column="1" Grid.Row="2" Margin="2"
+             ItemsSource="{Binding DzialComboboxItems}" SelectedValuePath="Key" SelectedValue="{Binding Path=idDzialu, Mode=TwoWay}" 
+             DisplayMemberPath="Value"/>
+        <TextBox Grid.Column="1" Grid.Row="3 " Margin="2" Text="{Binding Lokalizacja,UpdateSourceTrigger=PropertyChanged}"/>
+        <ComboBox Grid.Column="1" Grid.Row="4" Margin="2"
+             ItemsSource="{Binding ZestawComboboxItems}" SelectedValuePath="Key" SelectedValue="{Binding Path=IdZestawu, Mode=TwoWay}" 
+             DisplayMemberPath="Value"/>
+
+    </Grid>
+</local:JedenViewBase>

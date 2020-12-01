@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9329C48B-72FD-4E2B-8888-E7F6C4372428}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SprzetKomputerowy</RootNamespace>
+    <AssemblyName>SprzetKomputerowy</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.2.0.2\lib\net45\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.4.1.0, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.4.1.0, Culture=neutral, PublicKeyToken=669f0b5e8f868abf, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Extras.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.4.1.0, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Models\Entities\Dzialy.cs">
+      <DependentUpon>SprzetKomputerowyEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\KategoriaZestawu.cs">
+      <DependentUpon>SprzetKomputerowyEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\KlasyfikacjaKomputera.cs">
+      <DependentUpon>SprzetKomputerowyEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\KlasyfikacjaUrzadzenia.cs">
+      <DependentUpon>SprzetKomputerowyEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Komputery.cs">
+      <DependentUpon>SprzetKomputerowyEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Lokalizacja.cs">
+      <DependentUpon>SprzetKomputerowyEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Osoby.cs">
+      <DependentUpon>SprzetKomputerowyEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Podzespoly.cs">
+      <DependentUpon>SprzetKomputerowyEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\SprzetKomputerowyEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SprzetKomputerowyEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\SprzetKomputerowyEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SprzetKomputerowyEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\SprzetKomputerowyEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SprzetKomputerowyEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\StanTechniczny.cs">
+      <DependentUpon>SprzetKomputerowyEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Urzadzenia.cs">
+      <DependentUpon>SprzetKomputerowyEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\UrzadzeniaWeWy.cs">
+      <DependentUpon>SprzetKomputerowyEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\Zestawy.cs">
+      <DependentUpon>SprzetKomputerowyEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ForAllView\ComboboxKeyAndValue.cs" />
+    <Compile Include="Models\ForAllView\KlasyfikacjaForAllView.cs" />
+    <Compile Include="Models\ForAllView\KomputeryForAllView.cs" />
+    <Compile Include="Models\ForAllView\LokalizacjaForAllView.cs" />
+    <Compile Include="Models\ForAllView\PracownikForAllView.cs" />
+    <Compile Include="Models\ForAllView\StanTechnicznyForAllView.cs" />
+    <Compile Include="Models\ForAllView\UrzadzeniaForAllView.cs" />
+    <Compile Include="Models\ForAllView\ZestawyForAllView.cs" />
+    <Compile Include="ViewModels\JedenViewModel.cs" />
+    <Compile Include="ViewModels\NowaKategoriaKomputeraViewModel.cs" />
+    <Compile Include="ViewModels\NowaKategoriaUrzadzeniaViewModel.cs" />
+    <Compile Include="ViewModels\NowaLokalizacjaViewModel.cs" />
+    <Compile Include="ViewModels\NowaOsobaViewModel.cs" />
+    <Compile Include="ViewModels\NowePodzespolyViewModel.cs" />
+    <Compile Include="ViewModels\NoweUrzadzenieViewModel.cs" />
+    <Compile Include="ViewModels\NoweUrzadzenieWeWyViewModel.cs" />
+    <Compile Include="ViewModels\NowyDzialViewModel.cs" />
+    <Compile Include="ViewModels\NowyKomputerViewModel.cs" />
+    <Compile Include="ViewModels\NowyStanTechnicznyViewModel.cs" />
+    <Compile Include="ViewModels\NowyZestawViewModel.cs" />
+    <Compile Include="ViewModels\WszystkieKomputeryViewModel.cs" />
+    <Compile Include="ViewModels\WszystkieUrzadzeniaViewModel.cs" />
+    <Compile Include="ViewModels\WszystkieViewModel.cs" />
+    <Compile Include="ViewModels\WszystkieZestawyViewModel.cs" />
+    <Compile Include="Views\JedenViewBase.cs" />
+    <Compile Include="Views\JedenWszystkieViewBase.cs" />
+    <Compile Include="Views\NawaKategoriaUrzadzenia.xaml.cs">
+      <DependentUpon>NawaKategoriaUrzadzenia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NowaKategoriaKomputeraView.xaml.cs">
+      <DependentUpon>NowaKategoriaKomputeraView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NowaLokalizacjaView.xaml.cs">
+      <DependentUpon>NowaLokalizacjaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NowaOsobaView.xaml.cs">
+      <DependentUpon>NowaOsobaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NowePodzespolyView.xaml.cs">
+      <DependentUpon>NowePodzespolyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NoweUrzadzenie.xaml.cs">
+      <DependentUpon>NoweUrzadzenie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NoweUrzadzenieWeWy.xaml.cs">
+      <DependentUpon>NoweUrzadzenieWeWy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NowyDzialView.xaml.cs">
+      <DependentUpon>NowyDzialView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NowyKomputerView.xaml.cs">
+      <DependentUpon>NowyKomputerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NowyStanTechnicznyView.xaml.cs">
+      <DependentUpon>NowyStanTechnicznyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NowyZestawView.xaml.cs">
+      <DependentUpon>NowyZestawView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WszystkieKategorieUrzadzeniaView.xaml.cs">
+      <DependentUpon>WszystkieKategorieUrzadzeniaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WszystkieKomputeryView.xaml.cs">
+      <DependentUpon>WszystkieKomputeryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WszystkieLokalizacjeView.xaml.cs">
+      <DependentUpon>WszystkieLokalizacjeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WszystkieUrzadzeniaView.xaml.cs">
+      <DependentUpon>WszystkieUrzadzeniaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WszystkieViewBase.cs" />
+    <Compile Include="Views\WszystkieZestawy.xaml.cs">
+      <DependentUpon>WszystkieZestawy.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\BaseCommand.cs" />
+    <Compile Include="ViewModels\Abstract\BaseViewModels.cs" />
+    <Compile Include="ViewModels\Abstract\CommandViewModels.cs" />
+    <Compile Include="ViewModels\Abstract\WorkspaceViewModels.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\MainWindowResources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NawaKategoriaUrzadzenia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NowaKategoriaKomputeraView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NowaLokalizacjaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NowaOsobaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NowePodzespolyView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NoweUrzadzenie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NoweUrzadzenieWeWy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NowyDzialView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NowyKomputerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NowyStanTechnicznyView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NowyZestawView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\WszystkieKategorieUrzadzeniaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\WszystkieKomputeryView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\WszystkieLokalizacjeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\WszystkieUrzadzeniaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\WszystkieZestawy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="Models\Entities\SprzetKomputerowyEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SprzetKomputerowyEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Models\Entities\SprzetKomputerowyEntities.edmx.diagram">
+      <DependentUpon>SprzetKomputerowyEntities.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Content\Icons\1.png" />
+    <Resource Include="Content\Icons\2.png" />
+    <Resource Include="Content\Icons\3.png" />
+    <Resource Include="Content\Icons\4.png" />
+    <Resource Include="Content\Icons\5.png" />
+    <Resource Include="Content\Icons\6.png" />
+    <Resource Include="Content\Icons\7.png" />
+    <Resource Include="Content\Icons\10.png" />
+    <Resource Include="Content\Icons\11.png" />
+    <Resource Include="Content\Icons\8.png" />
+    <Resource Include="Content\Icons\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\Entities\SprzetKomputerowyEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SprzetKomputerowyEntities.edmx</DependentUpon>
+      <LastGenOutput>SprzetKomputerowyEntities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Entities\SprzetKomputerowyEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SprzetKomputerowyEntities.edmx</DependentUpon>
+      <LastGenOutput>SprzetKomputerowyEntities.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SprzetKomputerowyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Dzialy">
+    <Key>
+      <PropertyRef Name="idDzialu" />
+    </Key>
+    <Property Name="idDzialu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NazwaDzialu" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="KategoriaZestawu">
+    <Key>
+      <PropertyRef Name="IdKategoriZestawu" />
+    </Key>
+    <Property Name="IdKategoriZestawu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NazwaKategoriZestawu" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="KlasyfikacjaKomputera">
+    <Key>
+      <PropertyRef Name="IdKlasyfikacjiKomputera" />
+    </Key>
+    <Property Name="IdKlasyfikacjiKomputera" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NazwaKlasyfikacji" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="KlasyfikacjaUrzadzenia">
+    <Key>
+      <PropertyRef Name="IdKlasyfikacjiUrzadzenia" />
+    </Key>
+    <Property Name="IdKlasyfikacjiUrzadzenia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NazwaKlasyfikacji" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Komputery">
+    <Key>
+      <PropertyRef Name="IdKomputera" />
+    </Key>
+    <Property Name="IdKomputera" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nazwakomputera" Type="nvarchar" MaxLength="50" />
+    <Property Name="Producent" Type="nvarchar" MaxLength="50" />
+    <Property Name="IdKlasyfikacjiKomputera" Type="int" />
+    <Property Name="NrSeryjny" Type="nvarchar" MaxLength="50" />
+    <Property Name="DataProdukcji" Type="date" />
+    <Property Name="IdOsoby" Type="int" />
+    <Property Name="CzyAktywny" Type="bit" />
+    <Property Name="IdUrzadzeniaWeWy" Type="int" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Lokalizacja">
+    <Key>
+      <PropertyRef Name="IdLokalizacji" />
+    </Key>
+    <Property Name="IdLokalizacji" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NazwaLokalizacji" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Osoby">
+    <Key>
+      <PropertyRef Name="IdOsoby" />
+    </Key>
+    <Property Name="IdOsoby" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Imie" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nazwisko" Type="nvarchar" MaxLength="50" />
+    <Property Name="IdDzialu" Type="int" />
+    <Property Name="IdZestawu" Type="int" />
+    <Property Name="Lokalizacja" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Podzespoly">
+    <Key>
+      <PropertyRef Name="idPodZespolu" />
+    </Key>
+    <Property Name="idPodZespolu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NazwaPodzespolu" Type="nchar" MaxLength="10" />
+    <Property Name="Ilosc" Type="int" />
+    <Property Name="NrSeryjny" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="StanTechniczny">
+    <Key>
+      <PropertyRef Name="IdStanuTechnicznego" />
+    </Key>
+    <Property Name="IdStanuTechnicznego" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NazwaStanuTechnicznego" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Urzadzenia">
+    <Key>
+      <PropertyRef Name="IdUrzadzenia" />
+    </Key>
+    <Property Name="IdUrzadzenia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NrEwidencyjny" Type="nvarchar" MaxLength="50" />
+    <Property Name="Producent" Type="nvarchar" MaxLength="50" />
+    <Property Name="IdKlasyfikacji" Type="int" />
+    <Property Name="NrSeryjny" Type="nvarchar" MaxLength="50" />
+    <Property Name="DataProdukcji" Type="date" />
+    <Property Name="IDKomputera" Type="int" />
+    <Property Name="idOsoby" Type="int" />
+    <Property Name="CzyAktywny" Type="bit" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="IdLokalizacji" Type="int" />
+    <Property Name="IdStanuTechnicznego" Type="int" />
+    <Property Name="NazwaUrzadzenia" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UrzadzeniaWeWy">
+    <Key>
+      <PropertyRef Name="IdUrzadzeniaWeWy" />
+    </Key>
+    <Property Name="IdUrzadzeniaWeWy" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NazwaUrzadzenia" Type="nvarchar" MaxLength="50" />
+    <Property Name="Producent" Type="nvarchar" MaxLength="50" />
+    <Property Name="NrSeryjny" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Zestawy">
+    <Key>
+      <PropertyRef Name="IdZestawu" />
+    </Key>
+    <Property Name="IdZestawu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUrzadzenia" Type="int" />
+    <Property Name="IdKomputera" Type="int" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="NazwaKategori" Type="nvarchar" MaxLength="50" />
+    <Property Name="NrEwidencji" Type="nvarchar" MaxLength="50" />
+    <Property Name="IdOsoby" Type="int" />
+    <Property Name="IdLokalizacji" Type="int" />
+  </EntityType>
+  <Association Name="FK_Komputery_KlasyfikacjaKomputera">
+    <End Role="KlasyfikacjaKomputera" Type="Self.KlasyfikacjaKomputera" Multiplicity="0..1" />
+    <End Role="Komputery" Type="Self.Komputery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KlasyfikacjaKomputera">
+        <PropertyRef Name="IdKlasyfikacjiKomputera" />
+      </Principal>
+      <Dependent Role="Komputery">
+        <PropertyRef Name="IdKlasyfikacjiKomputera" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Komputery_Osoby">
+    <End Role="Osoby" Type="Self.Osoby" Multiplicity="0..1" />
+    <End Role="Komputery" Type="Self.Komputery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Osoby">
+        <PropertyRef Name="IdOsoby" />
+      </Principal>
+      <Dependent Role="Komputery">
+        <PropertyRef Name="IdOsoby" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Komputery_UrzadzeniaWeWy">
+    <End Role="UrzadzeniaWeWy" Type="Self.UrzadzeniaWeWy" Multiplicity="0..1" />
+    <End Role="Komputery" Type="Self.Komputery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UrzadzeniaWeWy">
+        <PropertyRef Name="IdUrzadzeniaWeWy" />
+      </Principal>
+      <Dependent Role="Komputery">
+        <PropertyRef Name="IdUrzadzeniaWeWy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Komputery_UrzadzeniaWeWy1">
+    <End Role="UrzadzeniaWeWy" Type="Self.UrzadzeniaWeWy" Multiplicity="0..1" />
+    <End Role="Komputery" Type="Self.Komputery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UrzadzeniaWeWy">
+        <PropertyRef Name="IdUrzadzeniaWeWy" />
+      </Principal>
+      <Dependent Role="Komputery">
+        <PropertyRef Name="IdUrzadzeniaWeWy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Osoby_Dzialy">
+    <End Role="Dzialy" Type="Self.Dzialy" Multiplicity="0..1" />
+    <End Role="Osoby" Type="Self.Osoby" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dzialy">
+        <PropertyRef Name="idDzialu" />
+      </Principal>
+      <Dependent Role="Osoby">
+        <PropertyRef Name="IdDzialu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Osoby_Zestawy">
+    <End Role="Zestawy" Type="Self.Zestawy" Multiplicity="0..1" />
+    <End Role="Osoby" Type="Self.Osoby" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Zestawy">
+        <PropertyRef Name="IdZestawu" />
+      </Principal>
+      <Dependent Role="Osoby">
+        <PropertyRef Name="IdZestawu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Urzadzenia_KlasyfikacjaUrzadzenia">
+    <End Role="KlasyfikacjaUrzadzenia" Type="Self.KlasyfikacjaUrzadzenia" Multiplicity="0..1" />
+    <End Role="Urzadzenia" Type="Self.Urzadzenia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KlasyfikacjaUrzadzenia">
+        <PropertyRef Name="IdKlasyfikacjiUrzadzenia" />
+      </Principal>
+      <Dependent Role="Urzadzenia">
+        <PropertyRef Name="IdKlasyfikacji" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Urzadzenia_Komputery">
+    <End Role="Komputery" Type="Self.Komputery" Multiplicity="0..1" />
+    <End Role="Urzadzenia" Type="Self.Urzadzenia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Komputery">
+        <PropertyRef Name="IdKomputera" />
+      </Principal>
+      <Dependent Role="Urzadzenia">
+        <PropertyRef Name="IDKomputera" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Urzadzenia_Lokalizacja">
+    <End Role="Lokalizacja" Type="Self.Lokalizacja" Multiplicity="0..1" />
+    <End Role="Urzadzenia" Type="Self.Urzadzenia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Lokalizacja">
+        <PropertyRef Name="IdLokalizacji" />
+      </Principal>
+      <Dependent Role="Urzadzenia">
+        <PropertyRef Name="IdLokalizacji" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Urzadzenia_Osoby">
+    <End Role="Osoby" Type="Self.Osoby" Multiplicity="0..1" />
+    <End Role="Urzadzenia" Type="Self.Urzadzenia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Osoby">
+        <PropertyRef Name="IdOsoby" />
+      </Principal>
+      <Dependent Role="Urzadzenia">
+        <PropertyRef Name="idOsoby" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Urzadzenia_StanTechniczny">
+    <End Role="StanTechniczny" Type="Self.StanTechniczny" Multiplicity="0..1" />
+    <End Role="Urzadzenia" Type="Self.Urzadzenia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StanTechniczny">
+        <PropertyRef Name="IdStanuTechnicznego" />
+      </Principal>
+      <Dependent Role="Urzadzenia">
+        <PropertyRef Name="IdStanuTechnicznego" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Zestawy_Komputery">
+    <End Role="Komputery" Type="Self.Komputery" Multiplicity="0..1" />
+    <End Role="Zestawy" Type="Self.Zestawy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Komputery">
+        <PropertyRef Name="IdKomputera" />
+      </Principal>
+      <Dependent Role="Zestawy">
+        <PropertyRef Name="IdKomputera" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Zestawy_Komputery1">
+    <End Role="Komputery" Type="Self.Komputery" Multiplicity="0..1" />
+    <End Role="Zestawy" Type="Self.Zestawy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Komputery">
+        <PropertyRef Name="IdKomputera" />
+      </Principal>
+      <Dependent Role="Zestawy">
+        <PropertyRef Name="IdKomputera" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Zestawy_Lokalizacja">
+    <End Role="Lokalizacja" Type="Self.Lokalizacja" Multiplicity="0..1" />
+    <End Role="Zestawy" Type="Self.Zestawy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Lokalizacja">
+        <PropertyRef Name="IdLokalizacji" />
+      </Principal>
+      <Dependent Role="Zestawy">
+        <PropertyRef Name="IdLokalizacji" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Zestawy_Osoby">
+    <End Role="Osoby" Type="Self.Osoby" Multiplicity="0..1" />
+    <End Role="Zestawy" Type="Self.Zestawy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Osoby">
+        <PropertyRef Name="IdOsoby" />
+      </Principal>
+      <Dependent Role="Zestawy">
+        <PropertyRef Name="IdOsoby" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Zestawy_Urzadzenia">
+    <End Role="Urzadzenia" Type="Self.Urzadzenia" Multiplicity="0..1" />
+    <End Role="Zestawy" Type="Self.Zestawy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Urzadzenia">
+        <PropertyRef Name="IdUrzadzenia" />
+      </Principal>
+      <Dependent Role="Zestawy">
+        <PropertyRef Name="IdUrzadzenia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SprzetKomputerowyModelStoreContainer">
+    <EntitySet Name="Dzialy" EntityType="Self.Dzialy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KategoriaZestawu" EntityType="Self.KategoriaZestawu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KlasyfikacjaKomputera" EntityType="Self.KlasyfikacjaKomputera" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KlasyfikacjaUrzadzenia" EntityType="Self.KlasyfikacjaUrzadzenia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Komputery" EntityType="Self.Komputery" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Lokalizacja" EntityType="Self.Lokalizacja" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Osoby" EntityType="Self.Osoby" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Podzespoly" EntityType="Self.Podzespoly" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StanTechniczny" EntityType="Self.StanTechniczny" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Urzadzenia" EntityType="Self.Urzadzenia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UrzadzeniaWeWy" EntityType="Self.UrzadzeniaWeWy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Zestawy" EntityType="Self.Zestawy" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Komputery_KlasyfikacjaKomputera" Association="Self.FK_Komputery_KlasyfikacjaKomputera">
+      <End Role="KlasyfikacjaKomputera" EntitySet="KlasyfikacjaKomputera" />
+      <End Role="Komputery" EntitySet="Komputery" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Komputery_Osoby" Association="Self.FK_Komputery_Osoby">
+      <End Role="Osoby" EntitySet="Osoby" />
+      <End Role="Komputery" EntitySet="Komputery" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Komputery_UrzadzeniaWeWy" Association="Self.FK_Komputery_UrzadzeniaWeWy">
+      <End Role="UrzadzeniaWeWy" EntitySet="UrzadzeniaWeWy" />
+      <End Role="Komputery" EntitySet="Komputery" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Komputery_UrzadzeniaWeWy1" Association="Self.FK_Komputery_UrzadzeniaWeWy1">
+      <End Role="UrzadzeniaWeWy" EntitySet="UrzadzeniaWeWy" />
+      <End Role="Komputery" EntitySet="Komputery" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Osoby_Dzialy" Association="Self.FK_Osoby_Dzialy">
+      <End Role="Dzialy" EntitySet="Dzialy" />
+      <End Role="Osoby" EntitySet="Osoby" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Osoby_Zestawy" Association="Self.FK_Osoby_Zestawy">
+      <End Role="Zestawy" EntitySet="Zestawy" />
+      <End Role="Osoby" EntitySet="Osoby" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Urzadzenia_KlasyfikacjaUrzadzenia" Association="Self.FK_Urzadzenia_KlasyfikacjaUrzadzenia">
+      <End Role="KlasyfikacjaUrzadzenia" EntitySet="KlasyfikacjaUrzadzenia" />
+      <End Role="Urzadzenia" EntitySet="Urzadzenia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Urzadzenia_Komputery" Association="Self.FK_Urzadzenia_Komputery">
+      <End Role="Komputery" EntitySet="Komputery" />
+      <End Role="Urzadzenia" EntitySet="Urzadzenia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Urzadzenia_Lokalizacja" Association="Self.FK_Urzadzenia_Lokalizacja">
+      <End Role="Lokalizacja" EntitySet="Lokalizacja" />
+      <End Role="Urzadzenia" EntitySet="Urzadzenia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Urzadzenia_Osoby" Association="Self.FK_Urzadzenia_Osoby">
+      <End Role="Osoby" EntitySet="Osoby" />
+      <End Role="Urzadzenia" EntitySet="Urzadzenia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Urzadzenia_StanTechniczny" Association="Self.FK_Urzadzenia_StanTechniczny">
+      <End Role="StanTechniczny" EntitySet="StanTechniczny" />
+      <End Role="Urzadzenia" EntitySet="Urzadzenia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Zestawy_Komputery" Association="Self.FK_Zestawy_Komputery">
+      <End Role="Komputery" EntitySet="Komputery" />
+      <End Role="Zestawy" EntitySet="Zestawy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Zestawy_Komputery1" Association="Self.FK_Zestawy_Komputery1">
+      <End Role="Komputery" EntitySet="Komputery" />
+      <End Role="Zestawy" EntitySet="Zestawy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Zestawy_Lokalizacja" Association="Self.FK_Zestawy_Lokalizacja">
+      <End Role="Lokalizacja" EntitySet="Lokalizacja" />
+      <End Role="Zestawy" EntitySet="Zestawy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Zestawy_Osoby" Association="Self.FK_Zestawy_Osoby">
+      <End Role="Osoby" EntitySet="Osoby" />
+      <End Role="Zestawy" EntitySet="Zestawy" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Zestawy_Urzadzenia" Association="Self.FK_Zestawy_Urzadzenia">
+      <End Role="Urzadzenia" EntitySet="Urzadzenia" />
+      <End Role="Zestawy" EntitySet="Zestawy" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

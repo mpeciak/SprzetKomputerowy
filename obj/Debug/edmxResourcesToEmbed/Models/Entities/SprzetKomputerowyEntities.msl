@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SprzetKomputerowyModelStoreContainer" CdmEntityContainer="SprzetKomputerowyEntities1">
+    <EntitySetMapping Name="Dzialy">
+      <EntityTypeMapping TypeName="SprzetKomputerowyModel.Dzialy">
+        <MappingFragment StoreEntitySet="Dzialy">
+          <ScalarProperty Name="idDzialu" ColumnName="idDzialu" />
+          <ScalarProperty Name="NazwaDzialu" ColumnName="NazwaDzialu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KategoriaZestawu">
+      <EntityTypeMapping TypeName="SprzetKomputerowyModel.KategoriaZestawu">
+        <MappingFragment StoreEntitySet="KategoriaZestawu">
+          <ScalarProperty Name="IdKategoriZestawu" ColumnName="IdKategoriZestawu" />
+          <ScalarProperty Name="NazwaKategoriZestawu" ColumnName="NazwaKategoriZestawu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KlasyfikacjaKomputera">
+      <EntityTypeMapping TypeName="SprzetKomputerowyModel.KlasyfikacjaKomputera">
+        <MappingFragment StoreEntitySet="KlasyfikacjaKomputera">
+          <ScalarProperty Name="IdKlasyfikacjiKomputera" ColumnName="IdKlasyfikacjiKomputera" />
+          <ScalarProperty Name="NazwaKlasyfikacji" ColumnName="NazwaKlasyfikacji" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KlasyfikacjaUrzadzenia">
+      <EntityTypeMapping TypeName="SprzetKomputerowyModel.KlasyfikacjaUrzadzenia">
+        <MappingFragment StoreEntitySet="KlasyfikacjaUrzadzenia">
+          <ScalarProperty Name="IdKlasyfikacjiUrzadzenia" ColumnName="IdKlasyfikacjiUrzadzenia" />
+          <ScalarProperty Name="NazwaKlasyfikacji" ColumnName="NazwaKlasyfikacji" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Komputery">
+      <EntityTypeMapping TypeName="SprzetKomputerowyModel.Komputery">
+        <MappingFragment StoreEntitySet="Komputery">
+          <ScalarProperty Name="IdKomputera" ColumnName="IdKomputera" />
+          <ScalarProperty Name="Nazwakomputera" ColumnName="Nazwakomputera" />
+          <ScalarProperty Name="Producent" ColumnName="Producent" />
+          <ScalarProperty Name="IdKlasyfikacjiKomputera" ColumnName="IdKlasyfikacjiKomputera" />
+          <ScalarProperty Name="NrSeryjny" ColumnName="NrSeryjny" />
+          <ScalarProperty Name="DataProdukcji" ColumnName="DataProdukcji" />
+          <ScalarProperty Name="IdOsoby" ColumnName="IdOsoby" />
+          <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+          <ScalarProperty Name="IdUrzadzeniaWeWy" ColumnName="IdUrzadzeniaWeWy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="NrEwidencyjny" ColumnName="NrEwidencyjny" />
+          <ScalarProperty Name="IdLokalizacji" ColumnName="IdLokalizacji" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lokalizacja">
+      <EntityTypeMapping TypeName="SprzetKomputerowyModel.Lokalizacja">
+        <MappingFragment StoreEntitySet="Lokalizacja">
+          <ScalarProperty Name="IdLokalizacji" ColumnName="IdLokalizacji" />
+          <ScalarProperty Name="NazwaLokalizacji" ColumnName="NazwaLokalizacji" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Osoby">
+      <EntityTypeMapping TypeName="SprzetKomputerowyModel.Osoby">
+        <MappingFragment StoreEntitySet="Osoby">
+          <ScalarProperty Name="IdOsoby" ColumnName="IdOsoby" />
+          <ScalarProperty Name="Imie" ColumnName="Imie" />
+          <ScalarProperty Name="Nazwisko" ColumnName="Nazwisko" />
+          <ScalarProperty Name="IdDzialu" ColumnName="IdDzialu" />
+          <ScalarProperty Name="IdZestawu" ColumnName="IdZestawu" />
+          <ScalarProperty Name="Lokalizacja" ColumnName="Lokalizacja" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Podzespoly">
+      <EntityTypeMapping TypeName="SprzetKomputerowyModel.Podzespoly">
+        <MappingFragment StoreEntitySet="Podzespoly">
+          <ScalarProperty Name="idPodZespolu" ColumnName="idPodZespolu" />
+          <ScalarProperty Name="NazwaPodzespolu" ColumnName="NazwaPodzespolu" />
+          <ScalarProperty Name="Ilosc" ColumnName="Ilosc" />
+          <ScalarProperty Name="NrSeryjny" ColumnName="NrSeryjny" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StanTechniczny">
+      <EntityTypeMapping TypeName="SprzetKomputerowyModel.StanTechniczny">
+        <MappingFragment StoreEntitySet="StanTechniczny">
+          <ScalarProperty Name="IdStanuTechnicznego" ColumnName="IdStanuTechnicznego" />
+          <ScalarProperty Name="NazwaStanuTechnicznego" ColumnName="NazwaStanuTechnicznego" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Urzadzenia">
+      <EntityTypeMapping TypeName="SprzetKomputerowyModel.Urzadzenia">
+        <MappingFragment StoreEntitySet="Urzadzenia">
+          <ScalarProperty Name="IdUrzadzenia" ColumnName="IdUrzadzenia" />
+          <ScalarProperty Name="NrEwidencyjny" ColumnName="NrEwidencyjny" />
+          <ScalarProperty Name="Producent" ColumnName="Producent" />
+          <ScalarProperty Name="IdKlasyfikacji" ColumnName="IdKlasyfikacji" />
+          <ScalarProperty Name="NrSeryjny" ColumnName="NrSeryjny" />
+          <ScalarProperty Name="DataProdukcji" ColumnName="DataProdukcji" />
+          <ScalarProperty Name="IDKomputera" ColumnName="IDKomputera" />
+          <ScalarProperty Name="idOsoby" ColumnName="idOsoby" />
+          <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IdLokalizacji" ColumnName="IdLokalizacji" />
+          <ScalarProperty Name="IdStanuTechnicznego" ColumnName="IdStanuTechnicznego" />
+          <ScalarProperty Name="NazwaUrzadzenia" ColumnName="NazwaUrzadzenia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UrzadzeniaWeWy">
+      <EntityTypeMapping TypeName="SprzetKomputerowyModel.UrzadzeniaWeWy">
+        <MappingFragment StoreEntitySet="UrzadzeniaWeWy">
+          <ScalarProperty Name="IdUrzadzeniaWeWy" ColumnName="IdUrzadzeniaWeWy" />
+          <ScalarProperty Name="NazwaUrzadzenia" ColumnName="NazwaUrzadzenia" />
+          <ScalarProperty Name="Producent" ColumnName="Producent" />
+          <ScalarProperty Name="NrSeryjny" ColumnName="NrSeryjny" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zestawy">
+      <EntityTypeMapping TypeName="SprzetKomputerowyModel.Zestawy">
+        <MappingFragment StoreEntitySet="Zestawy">
+          <ScalarProperty Name="IdZestawu" ColumnName="IdZestawu" />
+          <ScalarProperty Name="IdUrzadzenia" ColumnName="IdUrzadzenia" />
+          <ScalarProperty Name="IdKomputera" ColumnName="IdKomputera" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="NazwaKategori" ColumnName="NazwaKategori" />
+          <ScalarProperty Name="NrEwidencji" ColumnName="NrEwidencji" />
+          <ScalarProperty Name="IdOsoby" ColumnName="IdOsoby" />
+          <ScalarProperty Name="IdLokalizacji" ColumnName="IdLokalizacji" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,134 @@
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\SprzetKomputerowy.exe.config
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\SprzetKomputerowy.exe
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\SprzetKomputerowy.pdb
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy.csprojAssemblyReference.cache
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\App.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy_MarkupCompile.cache
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy_MarkupCompile.lref
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\MainWindow.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy.g.resources
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy.Properties.Resources.resources
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy.csproj.GenerateResource.cache
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy.exe
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy.pdb
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NoweUrzadzenie.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowyKomputerView.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\MainWindowResources.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NoweUrzadzenie.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowyKomputerView.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\EntityFramework.dll
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\EntityFramework.xml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy_Content.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy.csproj.CopyComplete
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowyZestawView.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowyZestawView.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NawaKategoriaUrzadzenia.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowaKategoriaKomputeraView.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowaOsobaView.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowePodzespolyView.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NoweUrzadzenieWeWy.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowyDzialView.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NawaKategoriaUrzadzenia.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowaKategoriaKomputeraView.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowaOsobaView.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowePodzespolyView.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NoweUrzadzenieWeWy.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowyDzialView.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Themes\Generic.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\CommonServiceLocator.dll
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowaLokalizacjaView.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowyStanTechnicznyView.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowaLokalizacjaView.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowyStanTechnicznyView.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieKategorieUrzadzeniaView.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieLokalizacjeView.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieKategorieUrzadzeniaView.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieLokalizacjeView.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieZestawy.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieZestawy.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieKomputeryView.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieKomputeryView.baml
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieUrzadzeniaView.g.cs
+C:\Users\Mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieUrzadzeniaView.baml
+C:\Users\mirek\Desktop\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy.csproj.CoreCompileInputs.cache
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\SprzetKomputerowy.exe.config
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\SprzetKomputerowy.exe
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\SprzetKomputerowy.pdb
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\CommonServiceLocator.dll
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\EntityFramework.dll
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.dll
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\System.Windows.Interactivity.dll
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\EntityFramework.xml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.pdb
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.xml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy.csprojAssemblyReference.cache
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\MainWindow.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NawaKategoriaUrzadzenia.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowaKategoriaKomputeraView.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowaLokalizacjaView.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowaOsobaView.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowePodzespolyView.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NoweUrzadzenie.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NoweUrzadzenieWeWy.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowyDzialView.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowyKomputerView.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowyStanTechnicznyView.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowyZestawView.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieKategorieUrzadzeniaView.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieKomputeryView.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieLokalizacjeView.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieUrzadzeniaView.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieZestawy.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\App.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy_Content.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy_MarkupCompile.cache
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy_MarkupCompile.lref
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Themes\Generic.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\MainWindow.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\MainWindowResources.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NawaKategoriaUrzadzenia.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowaKategoriaKomputeraView.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowaLokalizacjaView.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowaOsobaView.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowePodzespolyView.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NoweUrzadzenie.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NoweUrzadzenieWeWy.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowyDzialView.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowyKomputerView.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowyStanTechnicznyView.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\NowyZestawView.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieKategorieUrzadzeniaView.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieKomputeryView.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieLokalizacjeView.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieUrzadzeniaView.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\Views\WszystkieZestawy.baml
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy.g.resources
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy.Properties.Resources.resources
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy.csproj.GenerateResource.cache
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy.csproj.CoreCompileInputs.cache
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy.csproj.CopyComplete
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy.exe
+D:\Projekty do firmy\SprzetKomputerowy\SprzetKomputerowy\obj\Debug\SprzetKomputerowy.pdb
